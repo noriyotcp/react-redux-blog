@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchPosts } from '../actions/index';
 
-export class PostsIndex extends Component {
+class PostsIndex extends Component {
   componentWillMount() {
-    console.log('this would be a good time to call an action.');
+    this.props.fetchPosts();
   }
 
   render() {
     return (
-      <div></div>
+      <div>List of blog posts</div>
     );
   }
 }
 
-export default PostsIndex;
+export default connect(null, { fetchPosts })(PostsIndex);
