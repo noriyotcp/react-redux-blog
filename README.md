@@ -1,25 +1,19 @@
-# ReduxSimpleStarter
+# react-redux-blog
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+This is the weather app using React and Redux
 
-###Getting Started###
+This project is based on [ReduxSimpleStarter](https://github.com/StephenGrider/ReduxSimpleStarter)
 
-There are two methods for getting started with this repo.
+[Redux Blog Post API](http://reduxblog.herokuapp.com/) is used for creating or deleting a post.
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+## Requirements
 
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
+You need [Redux Blog Post API](http://reduxblog.herokuapp.com/)
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+Create ``api_keys.js`` in the root of your project.
 
-```
-	> npm install
-	> npm start
+And add Redux Blog Post API key to the file.
+
+```js
+export const API_KEY = 'your unique api key';
 ```
